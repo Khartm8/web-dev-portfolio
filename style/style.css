@@ -1,0 +1,137 @@
+:root {
+    --main-bg: #0A0A0B;
+    --gray: #ADADAD;
+    --white: #FFFFFF;
+    --yellow: #FBE850;
+    --dark-gray: #2E3038;
+    --main-font: 'Inter', sans-serif;
+    --title-font: 'Prata', serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--main-bg);
+}
+h1, h2, h3 {
+    font-family: var(--title-font);
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.3;
+    color: var(--white);
+}
+.text-secondary {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+.projects, .about, .cta {
+    padding: 80px 0;
+}
+
+/* navbar */
+.navbar {
+    padding-top: 40px;
+}
+.logo {
+    font-family: var(--title-font);
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--white);
+    text-decoration: none;
+}
+.logo:hover {
+    color: var(--white);
+    opacity: .75;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem var(--white);
+}
+.burger-icon {
+    color: var(--white);
+}
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--gray);
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+    color: var(--gray);
+    opacity: .75;
+}
+.get-in-btn {
+    padding: 16px 32px;
+    border: 0;
+    background-color: var(--yellow);
+    color: #000;
+    font-family: var(--title-font);
+    font-size: 18px;
+    line-height: 1.3;
+}
+.get-in-btn:hover {
+    opacity: .75;
+}
+
+/* hero */
+.hero {
+    padding-top: 80px;
+}
+.hero__title {
+    font-family: var(--title-font);
+    font-size: 56px;
+    line-height: 1.3;
+    color: var(--white);
+}
+.hero__subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+/* logos */
+.logos {
+    padding-top: 80px;
+}
+
+/* projects */
+.project {
+    max-width: 530px;
+}
+
+/* about */
+.about {
+    background: var(--dark-gray);
+}
+.about__item {
+    max-width: 530px;
+}
+
+/* cta */
+
+/* footer */
+.footer {
+    background-color: var(--dark-gray);
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 36px;
+    }
+    .project:first-of-type {
+        margin-bottom: 56px;
+    }
+}
+
+
+
+
